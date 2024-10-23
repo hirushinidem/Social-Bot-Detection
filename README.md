@@ -8,7 +8,7 @@ The problem involves detecting automated bot accounts on Twitter (now X) that sp
 * They potentially influence user behavior and opinions
 
 ## Research Gap
-Based on the code implementation, this project addresses these key gaps:
+This project addresses these key gaps:
 
 * Existing solutions often focus on single features (like text only or metadata only)
 * Previous approaches may not handle real-time detection effectively
