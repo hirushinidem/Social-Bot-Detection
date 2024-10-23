@@ -1,55 +1,50 @@
-# Social-Bot-Detection
+# 🤖 Social-Bot-Detection
 
-## Introduction
-Social media platforms like Twitter face significant challenges from automated bot accounts. These bots can manipulate public opinion, spread misinformation, and disrupt genuine user interactions.
+A hybrid deep learning approach for detecting automated bot accounts on Twitter using LSTM and dense neural networks.
 
-## Problem Statement
+## 📝 Introduction
+Social media platforms like Twitter face significant challenges from automated bot accounts that can:
+- 🔄 Manipulate public opinion
+- ❌ Spread misinformation
+- 🔨 Disrupt genuine user interactions
 
-* Growing presence of automated bot accounts on social media
-* Difficulty in distinguishing between human and bot-generated content
-* Need for accurate, real-time bot detection mechanisms
+## 🎯 Problem Statement
+- 📈 Growing presence of automated bot accounts
+- 🔍 Difficulty in distinguishing between human and bot content
+- ⚡ Need for accurate, real-time detection mechanisms
 
-## Current Limitations:
-The code implementation addresses these key limitations in existing solutions:
-* Current systems often use:
-- Single feature analysis (only text OR metadata)
-- Basic classification methods
-- Limited feature extraction
+## ⚠️ Current Limitations
+Existing solutions often rely on:
+- 📊 Single feature analysis
+- 🔢 Basic classification methods
+- 📉 Limited feature extraction
 
-## Methodology
-The project uses a hybrid neural network approach combining:
+## 🛠️ Methodology
 
 ### Data Processing
+#### Text Processing
+- 📚 Tokenization of tweet text
+- 📏 Padding sequences to uniform length
+- 🧹 Text cleaning (removing digits, punctuation)
 
-#### Text processing
-- Tokenization of tweet text
-- Padding sequences to uniform length
-- Cleaning text (removing digits, punctuation, etc.)
-
-#### Feature extraction
-- User mentions count
-- Hashtag count
-- Organization and Person entity percentages
+#### Feature Extraction
+- @ User mentions count
+- # Hashtag count
+- 🏢 Organization and Person entity percentages
 
 ### Model Architecture
-
-- Text Input Branch:
-  - Embedding layer
-  - LSTM layer
-  
-- Numerical Input Branch:
-  - Dense layer for numeric features
-  
-- Combined Architecture:
-  - Concatenation of both branches
-  - Multiple dense layers with dropout
-  - Final sigmoid output layer
-
-### Training Process
-
-- Used Adam optimizer
-- Binary cross-entropy loss
-- Early stopping to prevent overfitting
-- Validation split of 20%
-  
-The model achieved approximately 97% accuracy on the test set, demonstrating effective bot detection capabilities.
+```python
+model = {
+    "Text Branch": {
+        "Embedding Layer": "Word embeddings",
+        "LSTM Layer": "Sequence processing"
+    },
+    "Numeric Branch": {
+        "Dense Layer": "Numeric feature processing"
+    },
+    "Combined": {
+        "Concatenation": "Feature fusion",
+        "Dense Layers": "With dropout",
+        "Output": "Sigmoid activation"
+    }
+}
