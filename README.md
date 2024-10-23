@@ -1,18 +1,20 @@
 # Social-Bot-Detection
 
-## Research Problem
-The problem involves detecting automated bot accounts on Twitter (now X) that spread misinformation and manipulate public opinion. This is significant because:
+## Introduction
+Social media platforms like Twitter face significant challenges from automated bot accounts. These bots can manipulate public opinion, spread misinformation, and disrupt genuine user interactions.
 
-* Bot accounts can artificially amplify certain messages
-* They can manipulate trending topics and discussions
-* They potentially influence user behavior and opinions
+## Problem Statement
 
-## Research Gap
-This project addresses these key gaps:
+* Growing presence of automated bot accounts on social media
+* Difficulty in distinguishing between human and bot-generated content
+* Need for accurate, real-time bot detection mechanisms
 
-* Existing solutions often focus on single features (like text only or metadata only)
-* Previous approaches may not handle real-time detection effectively
-* Many current solutions don't combine both text and numerical features for classification
+## Current Limitations:
+The code implementation addresses these key limitations in existing solutions:
+* Current systems often use:
+- Single feature analysis (only text OR metadata)
+- Basic classification methods
+- Limited feature extraction
 
 ## Methodology
 The project uses a hybrid neural network approach combining:
