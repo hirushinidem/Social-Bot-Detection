@@ -20,31 +20,21 @@ Existing solutions often rely on:
 - Limited feature extraction
 
 ## 🛠️ Methodology
-
-### Data Processing
-#### Text Processing
-- Tokenization of tweet text
-- Padding sequences to uniform length
-- Text cleaning (removing digits, punctuation)
-
-#### Feature Extraction
-- User mentions count
-- Hashtag count
-- Organization and Person entity percentages
-
 ### Model Architecture
-```python
-model = {
-    "Text Branch": {
-        "Embedding Layer": "Word embeddings",
-        "LSTM Layer": "Sequence processing"
-    },
-    "Numeric Branch": {
-        "Dense Layer": "Numeric feature processing"
-    },
-    "Combined": {
-        "Concatenation": "Feature fusion",
-        "Dense Layers": "With dropout",
-        "Output": "Sigmoid activation"
-    }
-}
+* Text Input Branch:
+   - Embedding layer
+   - LSTM layer
+* Numerical Input Branch:
+   - Dense layer for numeric features
+* Combined Architecture:
+   - Concatenation of both branches
+   - Multiple dense layers with dropout
+  - Final sigmoid output layer
+### Training Process
+* Used Adam optimizer
+* Binary cross-entropy loss
+* Early stopping to prevent overfitting
+* Validation split of 20%
+
+The model achieved approximately 97% accuracy on the test set, demonstrating effective bot detection capabilities. 
+
