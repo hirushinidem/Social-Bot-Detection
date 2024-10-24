@@ -13,12 +13,6 @@ Social media platforms like Twitter face significant challenges from automated b
 - Difficulty in distinguishing between human and bot content
 - Need for accurate, real-time detection mechanisms
 
-## ⚠️ Current Limitations
-Existing solutions often rely on:
-- Single feature analysis
-- Basic classification methods
-- Limited feature extraction
-
 ## 🛠️ Methodology
 ### Model Architecture
 * Text Input Branch:
