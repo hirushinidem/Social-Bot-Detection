@@ -5,6 +5,7 @@ The synthetic data generation process significantly improved the class balance b
 3.	Extracting meaningful features for each synthetic tweet:
 - Number of mentions (@) and hashtags (#)
 - Percentage of organizational references
-- 	Percentage of person references
--  Always labeled as bot (1.0)
+- Percentage of person references
+- Always labeled as bot (1.0)
+  
 The generation process increased the bot class from 4,342 to 104,342 instances, while maintaining the original 129,856 human tweets. This resulted in a near-balanced final distribution (55% human vs 45% bot), making the dataset more suitable for training an unbiased bot detection model.
