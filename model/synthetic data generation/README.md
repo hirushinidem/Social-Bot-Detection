@@ -2,9 +2,9 @@ The initial dataset exhibited a significant class imbalance, with 129,856 human 
 The synthetic data generation process significantly improved the class balance by augmenting the original bot class (class 1.0). Starting with only 4,342 real bot tweets, synthetic data generation created approximately 100,000 additional bot examples using carefully crafted methods from the code. The process involved:
 1.	Using the Faker library to generate tweet content with realistic text patterns
 2.	Incorporating specific bot-like features:
-3.	Extracting meaningful features for each synthetic tweet: 
-I.	Number of mentions (@) and hashtags (#)
-II.	Percentage of organizational references
-III.	Percentage of person references
-IV.	Always labeled as bot (1.0)
+3.	Extracting meaningful features for each synthetic tweet:
+- Number of mentions (@) and hashtags (#)
+- Percentage of organizational references
+- 	Percentage of person references
+-  Always labeled as bot (1.0)
 The generation process increased the bot class from 4,342 to 104,342 instances, while maintaining the original 129,856 human tweets. This resulted in a near-balanced final distribution (55% human vs 45% bot), making the dataset more suitable for training an unbiased bot detection model.
